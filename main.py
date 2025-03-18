@@ -65,3 +65,4 @@ def save_to_excel(tables, output_path):
         for name, table in tables:
             df = pd.DataFrame(table[1:], columns=table[0])
             df.to_excel(writer, sheet_name=name, index=False)
+
